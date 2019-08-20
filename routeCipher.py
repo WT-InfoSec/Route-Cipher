@@ -2,9 +2,7 @@
 # RouteCipher.py
 
 '''
-
 See README.md for description!
-
 '''
 
 def encodeRightLeftCipher(message, gridWidth):
@@ -54,8 +52,8 @@ def makeGrid(gridWidth):
 def addExtraChars(string, number):
 	finalString = string
 	alpha = ['a','b','c','d','e','f','g','h','i',
-			'j','k','l','m','n','o','p','q','r',
-			's','t','u','v','w','x','y','z']
+		'j','k','l','m','n','o','p','q','r',
+		's','t','u','v','w','x','y','z']
 	# range starts at 1 for reverse indexing
 	for i in range(1, number+1):
 		# add chars reverse alphabetically, rolling if > 26 needed 
@@ -96,7 +94,6 @@ def getStringWithUppers(grid):
 			if (current.isupper()):
 				output += current
 	return output
-
 
 def testEncodeRLCipher():
 	assert(encodeRightLeftCipher('weattackatdawn',4) == '4WTAWNTAEACDzyAKT')

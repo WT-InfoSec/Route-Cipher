@@ -3,6 +3,12 @@ Message encryption problem from a programming assignment at Carnegie Mellon
 
 A right-left cipher, a kind of route cipher, is a fairly simple way to encrypt a message. It takes two values, some plaintext and a number of rows, and it first constructs a grid with that number of rows and the minimum number of columns required, writing the message in successive columns. For example, if the message is WEATTACKATDAWN, with 4 rows, the grid would be: 
 
+W T A W
+
+E A T N
+
+   
+   
    [W T A W]
    [E A T N]
    [A C D  ]

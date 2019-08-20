@@ -7,9 +7,9 @@ A right-left cipher, a kind of route cipher, is a fairly simple way to encrypt a
 
 [E A T N]
 
-[A C D - ]
+[A C D _ ]
 
-[T K A - ]
+[T K A _ ]
    
 We will assume the message only contains uppercase letters. We'll fill in the missing grid entries with lowercase letters starting from z and going in reverse (wrapping around if necessary), so we have:
 

@@ -29,10 +29,10 @@ def encodeRightLeftCipher(message, gridWidth):
 	return encodeString
 
 def decodeRightLeftCipher(encodedMessage):
-	gridWidth = int((len(encodedMessage) - 1)**(0.5))
-	grid = makeGrid(gridWidth)
-	# remove number from character
+	# remove preceding number from encoded message
 	preDecode = encodedMessage[1::]
+	gridWidth = int((len(preDecode))**(0.5))
+	grid = makeGrid(gridWidth)
 	# fill decode grid
 	grid = fillDecodeGrid(grid, preDecode)
 	# add all uppercase to final string

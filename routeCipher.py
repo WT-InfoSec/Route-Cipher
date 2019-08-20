@@ -35,7 +35,7 @@ def decodeRightLeftCipher(encodedMessage):
 	grid = makeGrid(gridWidth)
 	# fill decode grid
 	grid = fillDecodeGrid(grid, preDecode)
-	# add all uppercase to final string
+	# retrieve uppercase chars to decode grid
 	decodedMessage = getStringWithUppers(grid)
 	
 	return decodedMessage

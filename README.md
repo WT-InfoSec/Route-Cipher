@@ -10,10 +10,10 @@ A right-left cipher, a kind of route cipher, is a fairly simple way to encrypt a
    
 We will assume the message only contains uppercase letters. We'll fill in the missing grid entries with lowercase letters starting from z and going in reverse (wrapping around if necessary), so we have:
 
-   W T A W
-   E A T N
-   A C D z
-   T K A y
+W T A W
+E A T N
+A C D z
+T K A y
    
 Next, we encrypt the text by reading alternating rows first to the right ("WTAW"), then to the left ("NTAE"), then back to the right ("ACDz"), and back to the left ("yAKT"), until we finish all rows. We precede these values with the number of rows itself in the string. So the encrypted value for the message WEATTACKATDAWN with 4 rows is "4WTAWNTAEACDzyAKT". 
 
